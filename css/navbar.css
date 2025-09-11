@@ -1,0 +1,17 @@
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand picture {
+    display: flex;
+    width: 230px;
+}
+
+.navbar .nav-item a {
+    color: var(--white-color) !important;
+}
+
+.navbar .nav-item a:hover,
+.navbar .nav-item a.active {
+    font-weight: 600;
+}

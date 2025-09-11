@@ -1,0 +1,65 @@
+body {
+    background-color: var(--soft-white);
+}
+
+.team-section .profile-card {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.team-section .footer-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    transition: height 0.4s ease, padding 0.4s ease;
+    overflow: hidden;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-section .profile-card:hover .footer-name {
+    height: 100%;
+    padding: 1.5rem 1rem;
+}
+
+.team-section .extra-info {
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.team-section .profile-card:hover .extra-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.extra-info p {
+    margin: 0.5rem 0;
+    text-align: start;
+}
+
+
+.social-info {
+    margin-top: auto;
+    width: 100%;
+    padding-top: 1rem;
+    background: var(--secondary-color);
+    border-top: 1px solid #ffffff8f;
+}
+
+.social-info p {
+    margin: 0.5rem 0;
+    text-align: start;
+}
+
+.slider-with-progress-bar-section .slick-list {
+    overflow: visible;
+}

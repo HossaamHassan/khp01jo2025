@@ -1,0 +1,324 @@
+/* Careers Hero Section */
+
+
+.careers-hero-title {
+    margin-bottom: 0;
+    color: white;
+}
+
+.careers-hero-divider {
+    width: 2px;
+    height: 200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.careers-hero-description {
+    color: #ffffff;
+    max-width: 600px;
+}
+
+/* Content Sections */
+
+
+.section-image-container {
+    position: relative;
+}
+
+.section-decorative-element {
+    position: absolute;
+    top: -80px;
+    inset-inline-start: -30px;
+    width: 130px;
+    height: 280px;
+    background-color: var(--button-color);
+    z-index: 3;
+}
+
+@media (max-width: 767.98px) {
+    .section-decorative-element {
+        z-index: -1;
+    }
+}
+
+
+/* Career Accordion Section */
+.career-accordion-section {
+    background-color: #ffffff;
+}
+
+.career-accordion-title {
+    text-align: left;
+}
+
+.career-accordion-container {
+    display: flex;
+    height: 550px;
+    gap: 15px;
+    overflow: visible;
+}
+
+.career-accordion-item {
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.career-accordion-item.active {
+    flex: 5;
+}
+
+.career-accordion-item:not(.active) {
+    flex: 0.3;
+}
+
+
+.career-item-content {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.6s ease;
+    z-index: 1;
+    top: 0;
+    inset-inline-start: 20px;
+}
+
+.career-accordion-item.active .career-item-content {
+    opacity: 1;
+    align-items: flex-start;
+    text-align: start;
+    max-width: 440px;
+}
+
+.career-accordion-item:not(.active) .career-item-content {
+    opacity: 1;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.career-read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--secondary-color);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.career-read-more-btn span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+}
+
+.career-accordion-item:not(.active) img {
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.career-accordion-item:not(.active) .career-item-title {
+    margin: 0;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    color: #fff;
+}
+
+.career-accordion-item:not(.active) .career-item-description {
+    display: none;
+}
+
+.career-accordion-item:not(.active) .career-read-more-btn {
+    display: none;
+}
+
+.career-accordion-item img {
+    filter: grayscale(1);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.career-accordion-section .main-btn {
+    width: fit-content;
+    margin: auto;
+}
+
+.modal .modal-dialog {
+    max-width: 800px;
+}
+
+.modal .modal-header {
+    color: var(--primary-color);
+}
+
+.modal .modal-content {
+    color: var(--secondary-color) !important;
+    padding-inline: 2rem;
+}
+
+.modal .modal-body {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.modal .modal-body ul {
+    padding-inline-start: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal .modal-content .main-btn {
+    width: fit-content;
+    margin: auto;
+    padding-block: 3px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+
+    .careers-hero-title {
+        text-align: center;
+    }
+
+    .careers-hero-divider {
+        display: none;
+    }
+
+    .careers-hero-description {
+        text-align: center;
+    }
+
+    .section-content {
+        text-align: center;
+    }
+
+    .accordion-container {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .accordion-item {
+        height: 120px;
+    }
+
+    .accordion-item.active {
+        height: 300px;
+        flex: none;
+    }
+
+    .accordion-item:not(.active) {
+        flex: none;
+    }
+
+    .accordion-item:not(.active) .item-content {
+        writing-mode: initial;
+        text-orientation: initial;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accordion-item:not(.active) .item-title {
+        transform: none;
+    }
+
+    .career-accordion-container {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .career-accordion-item {
+        height: 120px;
+    }
+
+    .career-accordion-item.active {
+        height: 350px;
+        flex: none;
+    }
+
+    .career-accordion-item:not(.active) {
+        flex: none;
+    }
+
+    .career-accordion-item:not(.active) .career-item-content {
+        writing-mode: initial;
+        text-orientation: initial;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .career-accordion-item:not(.active) .career-item-title {
+        transform: none;
+    }
+
+
+    .internships-accordion-item:not(.active) {
+        flex: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    .accordion-container {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+
+    .accordion-item.active {
+        flex: none;
+    }
+
+    .accordion-item:not(.active) {
+        flex: none;
+    }
+
+    .accordion-item:not(.active) .item-content {
+        writing-mode: initial;
+        text-orientation: initial;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accordion-item:not(.active) .item-title {
+        transform: none;
+    }
+
+    .section-image,
+    .internship-card-image {
+        height: 280px;
+    }
+
+    .internship-card-body {
+        padding: 25px;
+    }
+}

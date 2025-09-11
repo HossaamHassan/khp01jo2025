@@ -1,0 +1,23 @@
+body {
+    background-image: url("../assets/images/bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar .nav-item a {
+    color: var(--secondary-color) !important;
+}
+
+.navbar-brand img {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(22%) saturate(2189%) hue-rotate(175deg) brightness(92%) contrast(93%);
+}
+
+.navbar-toggler i {
+    color: var(--black-color) !important;
+}

@@ -1,0 +1,254 @@
+/* Firm Hero Section */
+.firm-hero-section {}
+
+.firm-hero-title {
+    margin-bottom: 40px;
+}
+
+.firm-hero-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #4A6FA5;
+    margin-bottom: 30px;
+}
+
+.firm-hero-description {
+    max-width: 500px;
+}
+
+/* Dynamic Law Firm Section */
+.dynamic-section {}
+
+.dynamic-title {
+
+    margin-bottom: 30px;
+}
+
+.dynamic-text {
+    margin-bottom: 20px;
+}
+
+.dynamic-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Trusted Advisors Section */
+.advisors-section {}
+
+.advisors-title {
+
+    margin-bottom: 40px;
+}
+
+.advisors-text {
+    margin-bottom: 20px;
+}
+
+/* Our Values Section */
+.values-section {
+    background-color: #08182A;
+    r: white;
+}
+
+.values-title {
+    color: white;
+    margin-bottom: 0;
+}
+
+.values-divider {
+    width: 2px;
+    height: 300px;
+    background-color: #6c9bd1;
+    margin: 0 auto;
+}
+
+.values-content {
+    padding-left: 60px;
+}
+
+.value-item {
+    margin-bottom: 50px;
+}
+
+.value-item-title {
+
+    color: #6c9bd1;
+    margin-bottom: 20px;
+}
+
+.value-item-text {
+    color: white;
+    max-width: 500px;
+}
+
+/* Achievements Section */
+
+.achievements-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative;
+}
+
+.achievements-blue-overlay {
+    position: absolute;
+    bottom: -30px;
+    inset-inline-start: -30px;
+    width: 150px;
+    height: 200px;
+    background-color: #4A6FA5;
+    z-index: -1;
+}
+
+.achievements-image-container {
+    position: relative;
+}
+
+.achievements-title {
+    margin-bottom: 0;
+}
+
+.achievements-text-content {
+    margin-top: 60px;
+}
+
+.achievements-text {
+    margin-bottom: 20px;
+}
+
+/* Awards and Certifications */
+.awards-section::before {
+    position: absolute;
+    content: "";
+    background-color: var(--shape-color);
+    width: 100%;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.awards-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.award-logo {
+    height: 120px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.award-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .firm-hero-divider {
+        width: 150px;
+    }
+
+    .values-title {
+        text-align: center;
+    }
+
+    .values-divider {
+        display: none;
+    }
+
+    .values-content {
+        padding-left: 15px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .firm-hero-title {
+        text-align: center;
+    }
+
+    .firm-hero-divider {
+        width: 120px;
+        margin: 0 auto 20px;
+    }
+
+    .firm-hero-description {
+        text-align: center;
+    }
+
+    .dynamic-title,
+    .advisors-title,
+    .achievements-title {
+        text-align: center;
+
+    }
+
+    .achievements-text-content {
+        margin-top: 40px;
+    }
+
+    .values-title {
+        text-align: center;
+
+    }
+
+    .values-content {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .dynamic-image {
+        height: 300px;
+    }
+
+    .achievements-imae {
+        height: 300px;
+    }
+
+    .awards-grid {
+        gap: 30px;
+    }
+
+    .award-logo {
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .firm-hero-divider {
+        width: 100px;
+        margin: 0 auto 15px;
+    }
+
+    .dynamic-title,
+    .advisors-title,
+    .achievements-title {
+        text-align: center;
+    }
+
+
+    .values-title {
+        text-align: center;
+    }
+
+    .values-content {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .awards-grid {
+        gap: 20px;
+    }
+
+}

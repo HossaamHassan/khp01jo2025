@@ -1,0 +1,36 @@
+ .news-content-title {
+    max-width: 400px;
+ }
+ .news-article-card {
+     margin-bottom: 40px;
+     transition: transform 0.3s ease;
+     background-color: transparent;
+     border-radius: 0;
+     overflow: hidden;
+     box-shadow: none;
+ }
+
+ .news-article-card:hover {
+     transform: translateY(-5px);
+ }
+
+
+ .news-article-card:hover .news-article-image {
+     transform: scale(1.02);
+ }
+
+
+ .news-article-title {
+     color: var(--primary-color);
+     margin-bottom: 20px;
+ }
+
+ .news-title-divider {
+     width: 100%;
+     height: 1px;
+     background-color: var(--secondary-color);
+     margin-bottom: 20px;
+ }
+ .news-article-content {
+    padding-bottom: 1rem;
+ }

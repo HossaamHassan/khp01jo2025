@@ -1,0 +1,4 @@
+blockquote p {
+    padding: 1rem 2rem;
+    border-inline-start: 13px solid var(--button-color);
+}
