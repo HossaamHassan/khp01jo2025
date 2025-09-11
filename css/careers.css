@@ -43,14 +43,6 @@
 
 
 /* Career Accordion Section */
-.career-accordion-section {
-    background-color: #ffffff;
-}
-
-.career-accordion-title {
-    text-align: left;
-}
-
 .career-accordion-container {
     display: flex;
     height: 550px;
@@ -283,7 +275,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
 
     .accordion-container {
