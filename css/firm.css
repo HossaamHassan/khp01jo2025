@@ -19,16 +19,16 @@
 /* Dynamic Law Firm Section */
 .dynamic-section {}
 
-.dynamic-title {
+.dynamic-section .dynamic-title {
 
     margin-bottom: 30px;
 }
 
-.dynamic-text {
+.dynamic-section .dynamic-text {
     margin-bottom: 20px;
 }
 
-.dynamic-image {
+.dynamic-section .dynamic-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -38,12 +38,12 @@
 /* Trusted Advisors Section */
 .advisors-section {}
 
-.advisors-title {
+.advisors-section .advisors-title {
 
     margin-bottom: 40px;
 }
 
-.advisors-text {
+.advisors-section .advisors-text {
     margin-bottom: 20px;
 }
 
@@ -53,40 +53,40 @@
     r: white;
 }
 
-.values-title {
+.values-section .values-title {
     color: white;
     margin-bottom: 0;
 }
 
-.values-divider {
+.values-section .values-divider {
     width: 2px;
     height: 300px;
     background-color: #6c9bd1;
     margin: 0 auto;
 }
 
-.values-content {
+.values-section .values-content {
     padding-left: 60px;
 }
 
-.value-item {
+.values-section .value-item {
     margin-bottom: 50px;
 }
 
-.value-item-title {
+.values-section .value-item-title {
 
     color: #6c9bd1;
     margin-bottom: 20px;
 }
 
-.value-item-text {
+.values-section .value-item-text {
     color: white;
     max-width: 500px;
 }
 
 /* Achievements Section */
 
-.achievements-image {
+.achievements-section .achievements-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -94,7 +94,7 @@
     position: relative;
 }
 
-.achievements-blue-overlay {
+.achievements-section .achievements-blue-overlay {
     position: absolute;
     bottom: -30px;
     inset-inline-start: -30px;
@@ -104,19 +104,19 @@
     z-index: -1;
 }
 
-.achievements-image-container {
+.achievements-section .achievements-image-container {
     position: relative;
 }
 
-.achievements-title {
+.achievements-section .achievements-title {
     margin-bottom: 0;
 }
 
-.achievements-text-content {
+.achievements-section .achievements-text-content {
     margin-top: 60px;
 }
 
-.achievements-text {
+.achievements-section .achievements-text {
     margin-bottom: 20px;
 }
 
@@ -133,7 +133,7 @@
     z-index: -1;
 }
 
-.awards-grid {
+.awards-section .awards-grid {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,13 +141,13 @@
     gap: 40px;
 }
 
-.award-logo {
+.awards-section .award-logo {
     height: 120px;
     width: auto;
     transition: opacity 0.3s ease;
 }
 
-.award-logo:hover {
+.awards-section .award-logo:hover {
     opacity: 1;
     filter: grayscale(0%);
 }
@@ -158,15 +158,15 @@
         width: 150px;
     }
 
-    .values-title {
+    .values-section .values-title {
         text-align: center;
     }
 
-    .values-divider {
+    .values-section .values-divider {
         display: none;
     }
 
-    .values-content {
+    .values-section .values-content {
         padding-left: 15px;
         margin-top: 0;
     }
@@ -186,32 +186,32 @@
         text-align: center;
     }
 
-    .dynamic-title,
-    .advisors-title,
-    .achievements-title {
+    .dynamic-section .dynamic-title,
+    .advisors-section .advisors-title,
+    .achievements-section .achievements-title {
         text-align: center;
 
     }
 
-    .achievements-text-content {
+    .achievements-section .achievements-text-content {
         margin-top: 40px;
     }
 
-    .values-title {
+    .values-section .values-title {
         text-align: center;
 
     }
 
-    .values-content {
+    .values-section .values-content {
         padding-left: 15px;
         text-align: center;
     }
 
-    .dynamic-image {
+     .dynamic-section .dynamic-image {
         height: 300px;
     }
 
-    .achievements-imae {
+     .achievements-section .achievements-image {
         height: 300px;
     }
 

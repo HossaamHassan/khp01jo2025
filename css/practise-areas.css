@@ -1,8 +1,8 @@
-.practise-cards .practice-area-card-container:nth-child(even) {
+.practice-content-section .practise-cards .practice-area-card-container:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.cards-container::after {
+.practice-content-section .cards-container::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -14,24 +14,24 @@
 }
 
 /* Practice Area Cards */
-.practice-content {
+.practice-content-section .practice-content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.practice-content .practice-title {
+.practice-content-section .practice-content .practice-title {
     color: var(--secondary-color);
 }
 
 /* See More Button */
-.see-more-section {
+.practice-content-section .see-more-section {
     text-align: center;
     margin-top: 40px;
 }
 
-.see-more-btn {
+.practice-content-section .see-more-section .see-more-btn {
     width: 60px;
     height: 60px;
     background-color: var(--button-color);
@@ -46,39 +46,39 @@
     transition: all 0.3s ease;
 }
 
-.see-more-btn:hover {
+.practice-content-section .see-more-section .see-more-btn:hover {
     background-color: #2a4a6b;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(59, 92, 133, 0.3);
 }
 
-.practise-cards {
+.practice-content-section .practise-cards {
     display: flex;
     justify-content: space-between;
 }
 
-.practise-cards:nth-child(even) {
+.practice-content-section .practise-cards:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.practice-area-card-img,
-.practice-area-card-content {
+.practice-content-section .practise-cards .practice-area-card-img,
+.practice-content-section .practise-cards .practice-area-card-content {
     flex: 1;
 }
 
 /* Responsive Design */
 @media (max-width: 991.98px) {
-    .practice-area-card .row {
+    .practice-content-section .practice-area-card .row {
         flex-direction: column !important;
     }
 
-    .practice-area-card.right-image .row {
+    .practice-content-section .practice-area-card.right-image .row {
         flex-direction: column-reverse !important;
     }
 }
 
 @media (max-width: 767.98px) {
-    .practise-cards {
+    .practice-content-section .practise-cards {
         flex-direction: column !important;
         margin-bottom: 2rem !important;
     }

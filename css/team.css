@@ -29,7 +29,7 @@ body {
     padding: 1.5rem 1rem;
 }
 
-.team-section .extra-info {
+.team-section .profile-card .extra-info {
     margin-top: 1rem;
     opacity: 0;
     transform: translateY(20px);
@@ -41,13 +41,13 @@ body {
     transform: translateY(0);
 }
 
-.extra-info p {
+.team-section .profile-card .extra-info p {
     margin: 0.5rem 0;
     text-align: start;
 }
 
 
-.social-info {
+.team-section .profile-card .social-info {
     margin-top: auto;
     width: 100%;
     padding-top: 1rem;
@@ -55,11 +55,11 @@ body {
     border-top: 1px solid #ffffff8f;
 }
 
-.social-info p {
+.team-section .profile-card .social-info p {
     margin: 0.5rem 0;
     text-align: start;
 }
 
-.slider-with-progress-bar-section .slick-list {
+.team-section .slider-with-progress-bar-section .slick-list {
     overflow: visible;
 }

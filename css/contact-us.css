@@ -1,7 +1,7 @@
-.contact-us-title {
+.contact-us-section .contact-us-title {
     color: var(--primary-color);
 }
 
-.form-group .main-btn {
+.contact-us-section.form-group .main-btn {
     width: fit-content;
 }

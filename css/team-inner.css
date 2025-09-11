@@ -9,7 +9,7 @@
  }
 
  /* Back Button */
- .back-button {
+ .cv-content-section .back-button {
      width: 50px;
      height: 50px;
      background-color: var(--secondary-color);
@@ -24,95 +24,95 @@
      transition: all 0.3s ease;
  }
 
- .back-button:hover {
+ .cv-content-section .back-button:hover {
      transform: translateX(-3px);
  }
 
  /* Profile Card */
- .profile-card {
+ .cv-content-section .profile-card {
      background-color: var(--secondary-color);
      color: white;
      padding: 30px;
      margin-top: -5px;
  }
 
- .profile-name {
+ .cv-content-section .profile-card .profile-name {
      margin-bottom: 8px;
  }
 
- .profile-title {
+ .cv-content-section .profile-card .profile-title {
      -weight: 400;
      margin-bottom: 5px;
      color: var(--color-white);
  }
 
- .profile-subtitle {
+ .cv-content-section .profile-card .profile-subtitle {
      margin-bottom: 30px;
      color: var(--color-white);
  }
 
- .profile-divider {
+ .cv-content-section .profile-card .profile-divider {
      width: 100%;
      height: 1px;
      background-color: rgba(255, 255, 255, 0.3);
      margin: 20px 0;
  }
 
- .contact-info {
+ .cv-content-section .profile-card .contact-info {
      margin-top: 20px;
  }
 
- .contact-item {
+ .cv-content-section .contact-info .contact-item {
      display: flex;
      align-items: center;
      margin-bottom: 12px;
      color: var(--color-white);
  }
 
- .contact-item i {
+ .cv-content-section .contact-info .contact-item i {
      width: 20px;
      margin-inline-end: 12px;
      color: white;
  }
 
- .contact-item a {
+ .cv-content-section .contact-info .contact-item a {
      color: var(--color-white);
      text-decoration: none;
      transition: color 0.3s ease;
  }
 
- .contact-item a:hover {
+ .cv-content-section .contact-info .contact-item a:hover {
      color: white;
  }
 
  /* Biography Section */
  @media (min-width: 992px) {
-     .biography-content {
+     .cv-content-section .biography-content {
          padding-inline-start: 40px;
      }
  }
 
- .biography-text {
-     -height: 1.6;
+ .cv-content-section .biography-content .biography-text {
+     line-height: 1.6;
      margin-bottom: 40px;
      text-align: justify;
  }
 
  /* Education Section */
- .education-section {
+ .cv-content-section .biography-content .education-section {
      margin-top: 40px;
  }
 
- .education-title {
+ .cv-content-section .education-section .education-title {
 
      margin-bottom: 20px;
  }
 
- .education-item {
+ .cv-content-section .education-section .education-item {
      margin-bottom: 15px;
  }
 
- .education-university {
+ .cv-content-section .education-section .education-university {
 
      color: var(--primary-color);
      margin-right: 8px;
