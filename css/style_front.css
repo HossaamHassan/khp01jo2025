@@ -467,3 +467,8 @@ a {
         width: 45px;
     }
 }
+
+.arabic-version .fa-arrow-right,
+.arabic-version .fa-arrow-left {
+    transform: rotate(180deg);
+}

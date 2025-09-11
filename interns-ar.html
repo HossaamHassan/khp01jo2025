@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body>
+<body class="arabic-version">
     <main>
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg py-4">
@@ -43,29 +43,29 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-0 me-lg-2 mb-2 mb-lg-0 gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">The Firm</a>
+                            <a class="nav-link" href="#">الشركة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#">الفريق</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Practice Areas</a>
+                            <a class="nav-link" href="#">مجالات الممارسة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News & Insights</a>
+                            <a class="nav-link" href="#">الأخبار والرؤى</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
+                            <a class="nav-link" href="#">الوظائف</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">تواصل معنا</a>
                         </li>
                     </ul>
                     <a href="#" class="main-btn text-center ">
-                        Internships
+                        التدريب
                     </a>
                 </div>
             </div>
@@ -76,17 +76,14 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-lg-5">
-                        <h1>Interns </h1>
+                        <h1>المتدربون</h1>
                     </div>
                     <div class="col-12 col-lg-1 d-flex justify-content-center align-items-center">
                         <span class="divider"></span>
                     </div>
                     <div class="col-12 col-lg-6">
                         <p>
-                            We’re always looking for talented individuals who share our commitment to excellence,
-                            integrity, and innovation. Please complete the form below and attach the required documents.
-                            We carefully review every application and will be in touch should your profile match our
-                            current opportunities.
+                            نحن دائمًا نبحث عن أفراد موهوبين يشاركوننا التزامنا بالتميز والنزاهة والابتكار. يرجى إكمال النموذج أدناه وإرفاق المستندات المطلوبة. نقوم بمراجعة كل طلب بعناية وسنتواصل معك إذا كان ملفك يتوافق مع الفرص المتاحة لدينا.
                         </p>
                     </div>
                 </div>
@@ -99,24 +96,24 @@
                     <form id="internshipApplication">
                         <!-- Full Name -->
                         <div class="form-group">
-                            <label for="fullName" class="form-label">Full Name<span class="required">*</span></label>
+                            <label for="fullName" class="form-label">الاسم الكامل<span class="required">*</span></label>
                             <input type="text" id="fullName" name="fullName" class="form-control"
-                                placeholder="Enter your full name" required>
+                                placeholder="أدخل اسمك الكامل" required>
                         </div>
 
                         <!-- Email -->
                         <div class="form-group">
-                            <label for="email" class="form-label">Your Email<span class="required">*</span></label>
+                            <label for="email" class="form-label">بريدك الإلكتروني<span class="required">*</span></label>
                             <input type="email" id="email" name="email" class="form-control"
-                                placeholder="Enter your email" required>
+                                placeholder="أدخل بريدك الإلكتروني" required>
                         </div>
 
                         <!-- CV Upload -->
                         <div class="form-group">
-                            <label for="cv" class="form-label">CV<span class="required">*</span></label>
+                            <label for="cv" class="form-label">السيرة الذاتية<span class="required">*</span></label>
                             <div class="file-upload-btn">
                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                <span id="cvFileName">Choose File</span>
+                                <span id="cvFileName">اختر ملف</span>
                                 <input type="file" id="cv" name="cv" class="file-upload-input" accept=".pdf,.doc,.docx"
                                     required>
                             </div>
@@ -124,54 +121,54 @@
 
                         <!-- Phone Number -->
                         <div class="form-group">
-                            <label for="phone" class="form-label">Phone Number<span class="required">*</span></label>
+                            <label for="phone" class="form-label">رقم الهاتف<span class="required">*</span></label>
                             <input type="tel" id="phone" name="phone" class="form-control"
-                                placeholder="Enter your Phone Number" required>
+                                placeholder="أدخل رقم هاتفك" required>
                         </div>
 
                         <!-- Availability -->
                         <div class="form-group">
-                            <label for="availability" class="form-label">Availability<span
+                            <label for="availability" class="form-label">التوفر<span
                                     class="required">*</span></label>
                             <select id="availability" name="availability" class="form-select" required>
-                                <option value="">Available Immediately</option>
-                                <option value="immediately">Available Immediately</option>
-                                <option value="1week">Available in 1 week</option>
-                                <option value="2weeks">Available in 2 weeks</option>
-                                <option value="1month">Available in 1 month</option>
-                                <option value="custom">Other</option>
+                                <option value="">متاح فورًا</option>
+                                <option value="immediately">متاح فورًا</option>
+                                <option value="1week">متاح خلال أسبوع</option>
+                                <option value="2weeks">متاح خلال أسبوعين</option>
+                                <option value="1month">متاح خلال شهر</option>
+                                <option value="custom">أخرى</option>
                             </select>
                         </div>
 
                         <!-- Reference Section -->
                         <div class="reference-section">
-                            <h3 class="reference-title">Reference</h3>
+                            <h3 class="reference-title">المرجع</h3>
 
                             <div class="form-group">
-                                <input type="text" name="referenceName" class="form-control" placeholder="Full Name*">
+                                <input type="text" name="referenceName" class="form-control" placeholder="الاسم الكامل*">
                             </div>
 
                             <div class="form-group">
                                 <input type="text" name="referencePosition" class="form-control"
-                                    placeholder="Position*">
+                                    placeholder="المنصب*">
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="referenceCompany" class="form-control" placeholder="Company*">
+                                <input type="text" name="referenceCompany" class="form-control" placeholder="الشركة*">
                             </div>
 
                             <div class="form-group">
-                                <input type="tel" name="referencePhone" class="form-control" placeholder="Phone*">
+                                <input type="tel" name="referencePhone" class="form-control" placeholder="الهاتف*">
                             </div>
                         </div>
 
                         <!-- Transcript/School Records -->
                         <div class="form-group">
-                            <label for="transcript" class="form-label">Transcript/School Records<span
+                            <label for="transcript" class="form-label">كشف العلامات/سجلات المدرسة<span
                                     class="required">*</span></label>
                             <div class="file-upload-btn">
                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                <span id="transcriptFileName">Choose File</span>
+                                <span id="transcriptFileName">اختر ملف</span>
                                 <input type="file" id="transcript" name="transcript" class="file-upload-input"
                                     accept=".pdf,.doc,.docx,.jpg,.png" required>
                             </div>
@@ -179,14 +176,14 @@
 
                         <!-- Message -->
                         <div class="form-group">
-                            <label for="message" class="form-label">Message<span class="required">*</span></label>
+                            <label for="message" class="form-label">الرسالة<span class="required">*</span></label>
                             <textarea id="message" name="message" class="form-textarea"
-                                placeholder="Why do you want to work at Khalifeh & Partners?" required></textarea>
+                                placeholder="لماذا ترغب بالعمل لدى خليفة وشركاه؟" required></textarea>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="form-group">
-                            <button type="submit" class="main-btn">Apply</button>
+                            <button type="submit" class="main-btn">تقديم</button>
                         </div>
                     </form>
                 </div>
@@ -199,8 +196,8 @@
                 <div class="title-section pb-5 mx-auto mb-5">
                     <div class="row">
                         <div class="col-12 text-center text-uppercase">
-                            <h3>Khalifeh & Partners</h3>
-                            <p>Lawyers</p>
+                            <h3>خليفة وشركاه</h3>
+                            <p>محامون</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +205,7 @@
                     <!-- Home Section -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Home</h3>
+                            <h3>الرئيسية</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
@@ -222,53 +219,53 @@
                     <!-- Firm Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>The Firm</h3>
+                            <h3>الشركة</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Values</a></li>
-                            <li><a href="#">Achievements</a></li>
+                            <li><a href="#">القيم</a></li>
+                            <li><a href="#">الإنجازات</a></li>
                         </ul>
                     </div>
 
                     <!-- Team Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Team</h3>
+                            <h3>الفريق</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Associates</a></li>
-                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">الفريق</a></li>
+                            <li><a href="#">المساعدون</a></li>
+                            <li><a href="#">الموظفون</a></li>
                         </ul>
                     </div>
 
                     <!-- Terms & Conditions Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Terms & Conditions</h3>
+                            <h3>الشروط والأحكام</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
                         </ul>
                     </div>
 
                     <!-- Contact Us Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Contact Us</h3>
+                            <h3>تواصل معنا</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
@@ -282,7 +279,7 @@
 
                             <div class="contact-item mb-2">
                                 <i class="fas fa-map-marker-alt me-2"></i>
-                                <span>Ibn Arabi St, Shmeisani</span>
+                                <span>شارع ابن عربي، الشميساني</span>
                             </div>
 
                             <div class="contact-item mb-2">
@@ -297,7 +294,8 @@
                 <div class="copyright-section mt-5">
                     <div class="copyright-content">
                         <p class="mb-3 mb-lg-0 text-center">
-                            Copyright @2025  All Right Reserved
+                            © <span id="current-year">2025</span>
+                            <span>نبرس باور الأردن. جميع الحقوق محفوظة.</span>
                         </p>
                     </div>
                 </div>

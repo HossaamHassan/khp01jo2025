@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Areas - Khalifeh & Partners</title>
+    <title>Lawyers Application - Khalifeh & Partners</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css ">
     <link rel="stylesheet" href="./css/all.min.css ">
     <link rel="stylesheet" href="./css/style_front.css ">
     <link rel="stylesheet" href="./css/navbar.css ">
     <link rel="stylesheet" href="./css/footer.css ">
-    <link rel="stylesheet" href="./css/practise-areas.css ">
+    <link rel="stylesheet" href="./css/forms.css ">
+    <link rel="stylesheet" href="./css/contact-us.css ">
     <link rel="stylesheet" href="./css/custom.css ">
     <!-- Js -->
     <script src="./js/jquery-3.7.1.js"></script>
@@ -19,8 +22,8 @@
     <script src="./js/main.js"></script>
 </head>
 
-<body>
-    <main id="practise-area">
+<body class="arabic-version">
+    <main id="contact-us">
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg py-4">
             <div class="container">
@@ -37,29 +40,29 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-0 me-lg-2 mb-2 mb-lg-0 gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="#">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">The Firm</a>
+                            <a class="nav-link" href="#">الشركة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Team</a>
+                            <a class="nav-link" href="#">الفريق</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Practice Areas</a>
+                            <a class="nav-link" href="#">مجالات الممارسة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News & Insights</a>
+                            <a class="nav-link" href="#">الأخبار والرؤى</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
+                            <a class="nav-link" href="#">الوظائف</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">اتصل بنا</a>
                         </li>
                     </ul>
                     <a href="#" class="main-btn text-center ">
-                        Internships
+                        التدريب
                     </a>
                 </div>
             </div>
@@ -70,66 +73,106 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-lg-5">
-                        <h1>Practice Areas </h1>
+                        <h1>اتصل بنا </h1>
                     </div>
                     <div class="col-12 col-lg-1 d-flex justify-content-center align-items-center">
                         <span class="divider"></span>
                     </div>
                     <div class="col-12 col-lg-6">
                         <p>
-                            Our firm provides comprehensive legal services across a broad range of practice areas.
-                            Whether navigating complex corporate transactions, resolving disputes, or advising on
-                            regulatory matters, our attorneys bring deep industry knowledge and a client-focused
-                            approach to every case. Discover how we tailor our legal strategies to meet the unique needs
-                            of businesses and individuals alike.
+                            سواء كنت تبحث عن تمثيل قانوني، لديك سؤال، أو ترغب ببساطة في معرفة المزيد عن خدماتنا، فإن
+                            فريقنا هنا لمساعدتك.
+                            يرجى التواصل باستخدام التفاصيل أدناه — سيتواصل معك أحد أعضاء فريقنا على الفور — نتطلع إلى
+                            الاستماع منك.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Practice Areas Content Section -->
-        <section class="practice-content-section py-5">
+        <!-- Application Form Section -->
+        <section class="contact-us-section application-form-section py-5">
             <div class="container">
-                <h2 class="practice-content-title text-center mb-5">Our Practice Areas</h2>
-                <div class=" cards-container position-relative">
-                    <a href="#" class="practise-cards mb-2 text-decoration-none ">
-                        <picture class="practice-area-card-img">
-                            <img src="./assets/images/practise-1.png" alt="Banking & Finance"
-                                class="default-image-class">
-                        </picture>
-                        <div class="practice-area-card-content">
-                            <div class="practice-content">
-                                <h3 class="practice-title">Banking & Finance</h3>
+                <div class="contact-us-container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h1 class="mb-4 contact-us-title">
+                                تواصل معنا
+                            </h1>
+                            <form>
+                                <div class="form-group-container">
+                                    <div class="form-group mb-0">
+                                        <label for="first-name" class="form-label">الاسم الأول<span
+                                                class="required">*</span></label>
+                                        <input type="text" id="first-name" name="first-name" class="form-control"
+                                            placeholder="أدخل اسمك الأول" required>
+                                    </div>
+
+                                    <div class="form-group mb-0">
+                                        <label for="last-name" class="form-label">اسم العائلة<span
+                                                class="required">*</span></label>
+                                        <input type="text" id="last-name" name="last-name" class="form-control"
+                                            placeholder="أدخل اسم العائلة" required>
+                                    </div>
+
+                                    <div class="form-group mb-0">
+                                        <label for="email" class="form-label">هاتفك<span
+                                                class="required">*</span></label>
+                                        <input type="tel" id="phone" name="phone" class="form-control"
+                                            placeholder="أدخل رقم هاتفك" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">بريدك الإلكتروني<span
+                                                class="required">*</span></label>
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            placeholder="أدخل بريدك الإلكتروني" required>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">رسالتك<span
+                                            class="required">*</span></label>
+                                    <textarea id="message" name="message" class="form-textarea"
+                                        placeholder="أدخل رسالتك" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="main-btn">إرسال الرسالة</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2007.4450422324282!2d35.902513!3d31.969812000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca0729adbbfc1%3A0xd193193570658e49!2sKhalifeh%20%26%20Partners%20Lawyers!5e1!3m2!1sen!2sus!4v1757239401451!5m2!1sen!2sus"
+                                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="contact-location d-flex align-items-center gap-2 mt-2">
+                                <picture>
+                                    <img src="./assets/icons/Location.svg" alt="">
+                                </picture>
+                                <h5 class="mb-0">
+                                    شارع ابن عربي، الشميساني
+                                </h5>
                             </div>
                         </div>
-                    </a>
-                    <a href="#" class="practise-cards mb-2 text-decoration-none ">
-                        <picture class="practice-area-card-img">
-                            <img src="./assets/images/practise-2.png" alt="Banking & Finance"
-                                class="default-image-class">
-                        </picture>
-                        <div class="practice-area-card-content">
-                            <div class="practice-content">
-                                <h3 class="practice-title">Banking & Finance</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="see-more-section">
-                    <button class="see-more-btn">
-                        <i class="fas fa-arrow-down"></i>
-                    </button>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!-- Start Footer -->
+        <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="title-section pb-5 mx-auto mb-5">
                     <div class="row">
                         <div class="col-12 text-center text-uppercase">
-                            <h3>Khalifeh & Partners</h3>
-                            <p>Lawyers</p>
+                            <h3>خليفة وشركاه</h3>
+                            <p>محامون</p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +180,7 @@
                     <!-- Home Section -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Home</h3>
+                            <h3>الرئيسية</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
@@ -151,53 +194,53 @@
                     <!-- Firm Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>The Firm</h3>
+                            <h3>الشركة</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Values</a></li>
-                            <li><a href="#">Achievements</a></li>
+                            <li><a href="#">القيم</a></li>
+                            <li><a href="#">الإنجازات</a></li>
                         </ul>
                     </div>
 
                     <!-- Team Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Team</h3>
+                            <h3>الفريق</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Associates</a></li>
-                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">الفريق</a></li>
+                            <li><a href="#">المعاونون</a></li>
+                            <li><a href="#">الموظفون</a></li>
                         </ul>
                     </div>
 
                     <!-- Terms & Conditions Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Terms & Conditions</h3>
+                            <h3>الشروط والأحكام</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
                             </button>
                         </div>
                         <ul class="footer-links">
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
                         </ul>
                     </div>
 
                     <!-- Contact Us Links -->
                     <div class="footer-section">
                         <div class="footer-section-header">
-                            <h3>Contact Us</h3>
+                            <h3>اتصل بنا</h3>
                             <button class="toggleButton" type="button">
                                 <i class="fas fa-plus"></i>
                                 <i class="fas fa-minus"></i>
@@ -211,7 +254,7 @@
 
                             <div class="contact-item mb-2">
                                 <i class="fas fa-map-marker-alt me-2"></i>
-                                <span>Ibn Arabi St, Shmeisani</span>
+                                <span>شارع ابن عربي، الشميساني</span>
                             </div>
 
                             <div class="contact-item mb-2">
@@ -226,7 +269,7 @@
                 <div class="copyright-section mt-5">
                     <div class="copyright-content">
                         <p class="mb-3 mb-lg-0 text-center">
-                            Copyright @2025  All Right Reserved
+                            جميع الحقوق محفوظة @2025
                         </p>
                     </div>
                 </div>
