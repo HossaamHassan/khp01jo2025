@@ -163,6 +163,11 @@ a {
 }
 
 /* Global Rules */
+/* Text Color */
+.text-secondary-color {
+    color: var(--secondary-color);
+}
+
 /* Aspect Ratio */
 .aspect-ratio-16-9 {
     aspect-ratio: 16 / 9;

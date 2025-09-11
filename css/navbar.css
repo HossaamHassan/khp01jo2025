@@ -7,6 +7,12 @@
     width: 230px;
 }
 
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .navbar .navbar-brand picture {
+        width: 140px;
+    }
+}
+
 .navbar .nav-item a {
     color: var(--white-color) !important;
 }
