@@ -170,6 +170,11 @@
         padding-left: 15px;
         margin-top: 0;
     }
+
+    .achievements-section .achievements-blue-overlay {
+        top: -30px;
+        bottom: auto;
+    }
 }
 
 @media (max-width: 768px) {

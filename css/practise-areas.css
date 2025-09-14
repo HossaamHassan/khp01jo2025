@@ -13,6 +13,8 @@
     z-index: 1;
 }
 
+
+
 /* Practice Area Cards */
 .practice-content-section .practice-content {
     display: flex;
@@ -78,6 +80,10 @@
 }
 
 @media (max-width: 767.98px) {
+    .practice-content-section .cards-container::after {
+        bottom: -2.5rem !important;
+    }
+
     .practice-content-section .practise-cards {
         flex-direction: column !important;
         margin-bottom: 2rem !important;

@@ -27,10 +27,10 @@
 
 .content-section .section-decorative-element {
     position: absolute;
-    top: -40px;
+    top: -30px;
     inset-inline-start: -30px;
-    width: 130px;
-    height: 280px;
+    width: 150px;
+    height: 200px;
     background-color: var(--button-color);
     z-index: -1;
 }
