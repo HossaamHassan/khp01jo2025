@@ -51,6 +51,10 @@ body {
     margin: 30px 0 30px auto;
 }
 
+.arabic-version .hero-section-home .divider-line {
+    margin: 30px auto 30px 0;
+}
+
 .hero-section-home .image-section {
     position: relative;
     flex-shrink: 0;
@@ -69,6 +73,11 @@ body {
     height: 90%;
     background-color: #4A6FA5;
     z-index: 0;
+}
+
+.arabic-version .blue-overlay {
+    inset-inline-start: -30px;
+    left: auto;
 }
 
 @media (max-width: 1199.98px) {
@@ -94,12 +103,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 60px;
+    padding-inline-end: 60px;
 }
 
 .firm-image-container {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 500px;
 }
 
@@ -113,19 +122,30 @@ body {
 
 .firm-blue-overlay {
     position: absolute;
-    bottom: -40px;
-    left: -40px;
-    width: 200px;
-    height: 150px;
+    bottom: -30px;
+    left: -30px;
+    width: 150px;
+    height: 450px;
     background-color: #4A6FA5;
     z-index: 1;
+}
+
+.arabic-version .firm-blue-overlay {
+    right: -30px;
+    left: auto;
+}
+
+.firm-divider-line {
+    width: 1px;
+    height: 100%;
+    background: #333;
 }
 
 .firm-text-col {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 80px;
+    padding-inline-start: 80px;
 }
 
 .firm-text-content {
@@ -140,16 +160,17 @@ body {
     text-transform: uppercase;
 }
 
-.firm-title {
-    font-size: 3.5rem;
-    font-weight: 400;
+.firm-title,
+.firm-title .blue-text {
+    font-size: 3.5rem !important;
+    font-weight: 400 !important;
     line-height: 1.1;
     color: #333;
     margin-bottom: 0;
 }
 
 .blue-text {
-    color: #4A6FA5;
+    color: #4A6FA5 !important;
 }
 
 .firm-description {
@@ -163,7 +184,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .firm-description strong {
@@ -172,62 +193,79 @@ body {
 }
 
 /* Responsive Design for Firm Section */
-@media (max-width: 1200px) {
-    .firm-title {
-        font-size: 3rem;
+@media (max-width: 1199.98px) {
+    .firm-title,
+    .firm-title .blue-text {
+        font-size: 3rem !important;
     }
 
     .firm-image-container {
-        width: 350px;
+        width: 450px;
         height: 450px;
     }
 
     .firm-text-col {
-        padding-left: 60px;
+        padding-inline-start: 60px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
+    .hero-section-home .text-content {
+        align-items: flex-start;
+    }
+
+    .hero-section-home .divider-line {
+        margin: 30px auto 30px 0;
+    }
+
+    .arabic-version .hero-section-home .divider-line {
+        margin: 30px 0 30px auto;
+    }
+    
     .firm-section {
         padding: 80px 0;
     }
 
     .firm-image-col {
-        padding-right: 15px;
+        padding-inline-end: 15px;
         margin-bottom: 60px;
     }
 
     .firm-text-col {
-        padding-left: 15px;
-        text-align: left;
+        padding-inline-start: 15px;
+        text-align: center;
+        justify-content: center;
     }
 
-    .firm-title {
-        font-size: 2.5rem;
-        text-align: center;
+    .firm-title,
+    .firm-title .blue-text {
+        font-size: 2.5rem !important;
+        text-align: center !important;
     }
 
     .firm-image-container {
-        width: 300px;
+        width: 400px;
         height: 400px;
     }
 
     .firm-blue-overlay {
-        width: 150px;
-        height: 120px;
-        bottom: -30px;
-        left: -30px;
+        height: 320px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .firm-title {
-        font-size: 2rem;
+    .firm-title,
+    .firm-title .blue-text {
+        font-size: 2rem !important;
     }
 
     .firm-image-container {
         width: 280px;
-        height: 350px;
+        height: 280px;
+    }
+
+    .firm-blue-overlay {
+        height: 250px;
     }
 
     .firm-description {
