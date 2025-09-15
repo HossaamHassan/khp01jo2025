@@ -14,7 +14,7 @@ body {
 
 .hero-section-home .vertical-text {
     position: absolute;
-    left: -200px;
+    inset-inline-start: -17rem;
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
     transform-origin: center;
@@ -22,6 +22,7 @@ body {
     letter-spacing: 8px;
     white-space: nowrap;
     z-index: 1;
+    font-size: 3rem;
 }
 
 .hero-section-home .main-content {
@@ -194,6 +195,7 @@ body {
 
 /* Responsive Design for Firm Section */
 @media (max-width: 1199.98px) {
+
     .firm-title,
     .firm-title .blue-text {
         font-size: 3rem !important;
@@ -221,7 +223,7 @@ body {
     .arabic-version .hero-section-home .divider-line {
         margin: 30px 0 30px auto;
     }
-    
+
     .firm-section {
         padding: 80px 0;
     }
@@ -254,6 +256,7 @@ body {
 }
 
 @media (max-width: 767.98px) {
+
     .firm-title,
     .firm-title .blue-text {
         font-size: 2rem !important;
